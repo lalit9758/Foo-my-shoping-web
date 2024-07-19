@@ -1,0 +1,127 @@
+.dropdown-menu {
+    background-color: #fff; /* Background color */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Border color */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Box shadow */
+  }
+
+  .dropdown-item {
+    color: #333; /* Text color */
+    padding: 0.5rem 1rem; /* Padding */
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+
+  .dropdown-item:hover {
+    background-color: #f8f9fa; /* Hover background color */
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+  }
+
+  .dropdown-menu-end {
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.5rem 0; /* Padding */
+  }
+/* CSS to open dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .nav-item.dropdown .dropdown-menu {
+    margin-top: 0; /* Adjusts the position */
+  }
+
+  #suggestions {
+    position: absolute;
+    top: 100%; /* Position below the input */
+    left: 0;
+    width: 100%; /* Take full width of parent */
+    display: none; /* Initially hide suggestions */
+    background-color: #ffffff; /* Background color */
+    border: 1px solid #ced4da; /* Border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow */
+    z-index: 1000; /* Ensure it appears above other content */
+    max-height: 200px; /* Limit height if needed */
+    overflow-y: auto; /* Enable vertical scrolling if exceeds max height */
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0; /* Hover background color */
+}
+
+
+  .hero-img{
+    width: 100%;
+    height: 70vh; 
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+  #hero-title{
+    max-height: 4.5em;
+    overflow: hidden;
+  }
+  .hero-descri{
+    max-height: 6em;
+    overflow: hidden;
+  }
+
+/* .category-image {
+    width: 100%;
+    height: 70%; 
+    object-fit: contain; 
+}
+.category-div{
+    height: 500px;
+} */
+
+/* feature area */
+#suggestions {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    cursor: pointer;
+}
+
+.feature-img{
+    width: 100%;
+    height: 50vh; 
+    object-fit: contain;
+    padding: 20px;
+}
+.feature-title{
+    max-height: 2.5em;
+    overflow: hidden;
+}
+.feature-discri{
+    max-height: 4.5em;
+    overflow: hidden;
+}
+.shop-card{
+    height:95% ;
+    margin-bottom: 10px;
+}
+
+.single-img{
+    width: 80%;
+    height: 60vh;
+    object-fit: contain;
+    padding: 20px;
+}
+.text-cap{
+    text-transform: capitalize;
+}
